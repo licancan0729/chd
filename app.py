@@ -19,7 +19,7 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import f1_score
 from sklearn.metrics import r2_score
 from collections import Counter
-from imblearn.under_sampling import RandomUnderSampler
+# from imblearn.under_sampling import RandomUnderSampler
 from sklearn.metrics import confusion_matrix
 import shap
 import matplotlib.pyplot as plt
