@@ -10,3 +10,4 @@ ngboost==0.3.10
 xgboost
 smote_variants
 shap
+seaborn
