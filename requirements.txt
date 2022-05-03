@@ -9,3 +9,4 @@ matplotlib==3.2.2
 ngboost==0.3.10
 xgboost
 smote_variants
+shap
