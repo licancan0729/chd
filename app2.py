@@ -110,7 +110,7 @@ shap_values_xgb= np.load('test00000001.npy')
 array1=np.vstack((shap_values_xgb[a][0:20],shap_values_xgb1[a]))
 
 shap.decision_plot(explainer_xgb.expected_value[a],array1,features_display,highlight=20,show=False)
-plt.savefig("/licancan0729/chd/main/P1.png",dpi=300, bbox_inches='tight')
+plt.savefig('P1.png',dpi=300, bbox_inches='tight')
 if a==2:
     a="coronary heart disease";
 elif a==1:
@@ -121,5 +121,5 @@ else:
 st.subheader(f"Predict：{a}")
 st.subheader(f"概率2：{a4}%")
 
-image = Image.open('/licancan0729/chd/main/p1.png')
+image = Image.open('p1.png')
 st.image(image)
