@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 st.title("Coronary stenosis prediction system")
 import  os
 st.title(os.getcwd())
-
+st.title(os.path.abspath('.'))
 
 HBA1C= st.sidebar.slider('HBA1C',1,50)
 HBA1C=HBA1C
