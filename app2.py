@@ -9,8 +9,6 @@ import streamlit as st
 import matplotlib.pyplot as plt
 st.title("Coronary stenosis prediction system")
 import  os
-st.title(os.getcwd())
-st.title(os.path.abspath('.'))
 
 HBA1C= st.sidebar.slider('HBA1C',1,50)
 HBA1C=HBA1C
@@ -112,6 +110,7 @@ array1=np.vstack((shap_values_xgb[a][0:20],shap_values_xgb1[a]))
 
 shap.decision_plot(explainer_xgb.expected_value[a],array1,features_display,highlight=20,show=False)
 plt.savefig('/app/chd/P1.png',dpi=300, bbox_inches='tight')
+st.title(os.listdir())
 if a==2:
     a="coronary heart disease";
 elif a==1:
