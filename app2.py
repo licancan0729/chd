@@ -110,7 +110,7 @@ array1=np.vstack((shap_values_xgb[a][0:20],shap_values_xgb1[a]))
 
 shap.decision_plot(explainer_xgb.expected_value[a],array1,features_display,highlight=20,show=False)
 plt.savefig('/app/chd/P1.png',dpi=300, bbox_inches='tight')
-st.title(os.listdir())
+
 if a==2:
     a="coronary heart disease";
 elif a==1:
