@@ -121,5 +121,5 @@ else:
 st.subheader(f"Predict：{a}")
 st.subheader(f"概率2：{a4}%")
 
-image = Image.open('/app/chd/p1.png')
+image = Image.open('/app/chd/P1.png')
 st.image(image)
